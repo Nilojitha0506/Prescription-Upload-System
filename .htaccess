@@ -1,0 +1,14 @@
+# Turn on URL rewriting
+RewriteEngine On
+
+# Redirect root to index.php
+RewriteRule ^$ index.php [L]
+
+# Protect config.php and other sensitive files
+<FilesMatch "config.php|.env|.htaccess">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Prevent directory browsing
+Options -Indexes
