@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Login.....!</title>
+<title>Login</title>
 <style>
   body {
     font-family: 'Poppins', sans-serif;
@@ -152,7 +152,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <div class="login-container">
   <h2>Login</h2>
   <?php if (!empty($_GET['registered'])) : ?>
-    <div class="alert alert-success">Registration successful! Please login.</div>
+    <div class="alert alert-success">Registration successful! Please login......</div>
   <?php endif; ?>
   <?php if (!empty($errors)) : ?>
     <div class="alert alert-error">
